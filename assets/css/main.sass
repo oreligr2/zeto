@@ -1,0 +1,131 @@
+body
+  font-weight: 500
+
+button, input, textarea
+  outline: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 42px
+  width: 158px
+  text-transform: uppercase
+  color: #fff
+  font-size: 14px
+  font-weight: 500
+  transition: 0.3s
+  white-space: nowrap
+  &_lk
+    width: 191px
+    flex: 0 0 191px
+    border-radius: 0
+    text-transform: uppercase
+    img
+      margin-right: 14px
+  &_orange
+    background-color: #E8712D
+  &_more
+    width: 206px
+    flex: 0 0 206px
+    color: #00B341
+    border: 1px solid #00B341
+    background-color: #fff
+    &:hover
+      color: #fff
+      background-color: #00B341
+  &_green
+    background-color: #00B341
+    &:hover
+      background-color: #E8712D
+  &:hover
+    color: #fff
+
+.section_title
+  margin-bottom: 22px
+
+.more
+  display: flex
+  justify-content: center
+  text-align: center
+  position: relative
+  .btn
+    position: relative
+    z-index: 1
+  &::before, &::after
+    position: absolute
+    content: ''
+    width: 100%
+    height: 2px
+    background-color: #EFEFEF
+    top: calc(50% - 5px)
+    left: 0
+  &::after
+    top: calc(50%)
+
+
+.h2
+  font-size: 40px
+  &__light
+    color: #fff
+
+
+.block
+  position: relative
+  &_mb
+    margin-bottom: 215px
+  &_dark
+    background-color: #323232
+    padding-top: 41px
+    padding-bottom: 50px
+    position: relative
+    .arrow-more
+      border-radius: 50%
+      color: #fff
+      text-align: center
+      width: 116px
+      height: 116px
+      position: absolute
+      bottom: -58px
+      left: 0
+      right: 0
+      margin: 0 auto
+      background-color: #323232
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      padding-top: 25px
+      img
+        width: 12px
+      &:hover
+        text-decoration: none
+  &_dotes
+    &::before, &::after
+      content: ''
+      width: 714px
+      height: 70px
+      background-image: url(./assets/img/search-bg.png)
+      position: absolute
+      top: 7px
+      left: 0
+      background-repeat: no-repeat
+      background-position: -10px 0
+    &::after
+      left: auto
+      right: 0
+  &_text
+    background-color: #404040
+    padding: 25px 30px
+    color: #fff
+    text-align: center
+    font-weight: 400
+    margin-top: 20px
+    margin-bottom: -155px
+    p
+      position: relative
+      z-index: 1
+      &:not(:last-child)
+        margin-bottom: 10px
+    .arrow-more
+      background-color: #404040
